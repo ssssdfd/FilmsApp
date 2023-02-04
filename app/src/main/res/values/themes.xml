@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyMovieAppWithActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:statusBarColor">@color/dark_blue</item>
+        <item name="colorPrimary">@color/dark_blue</item>
+     <!--   <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
+    </style>
+
+    <style name="Theme.MyMovieAppWithoutActionBar" parent="Theme.AppCompat.DayNight">
+        <item name="android:statusBarColor">#4D5E78</item>
+          <item name="windowActionBar">false</item>
+           <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RoundedImageView" parent="">
+        <item name="cornerSizeTopRight">15dp</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeBottomLeft">15dp</item>
+        <item name="cornerSizeBottomRight">15dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.MySplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue_fog</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/my_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyMovieAppWithActionBar</item>
+    </style>
+</resources>
